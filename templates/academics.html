@@ -1,0 +1,207 @@
+{% extends 'base.html' %}
+
+{% block title %}Academics - St. Antony's Girls Higher Secondary School{% endblock %}
+
+{% block content %}
+<!-- Page Banner -->
+<section class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200');">
+    <div class="page-banner-overlay"></div>
+    <div class="container">
+        <h1>Academic Programs</h1>
+        <div class="breadcrumbs">
+            <a href="{{ url_for('index') }}">Home</a>
+            <span class="separator"></span>
+            <span class="current">Academics</span>
+        </div>
+    </div>
+</section>
+
+<!-- Academics Intro Section -->
+<section class="section">
+    <div class="container academics-intro">
+        <div class="academics-intro-text slide-up">
+            <h3>Intellectual Rigor & Holistic Growth</h3>
+            <p>At St. Antony’s, we follow the Tamil Nadu State Board curriculum (Samacheer Kalvi) for classes VI to XII. Our primary goal is to foster an environment of conceptual clarity, scientific reasoning, and analytical thinking. We ensure that our students do not just memorize facts, but deeply understand the application of knowledge.</p>
+            <p>Our classroom experience is enhanced by modern smart-boards, digital labs, and individual attention. With a low student-to-teacher ratio, our educators are able to support and challenge each student, ensuring that every girl achieves her potential.</p>
+            <p>We place high emphasis on regular assessments, remedial coaching for students needing extra support, and specialized training programs for competitive entrance exams.</p>
+        </div>
+        <div class="slide-up delay-2">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800" alt="Students engaged in classroom discussion" class="academics-intro-img">
+        </div>
+    </div>
+</section>
+
+<!-- Curriculum Streams Section -->
+<section id="curriculum" class="section section-cream">
+    <div class="container">
+        <div class="section-header slide-up">
+            <h2>Course Curricula & Streams</h2>
+            <p>Structured learning pathways designed for primary, secondary, and higher secondary sections</p>
+        </div>
+        
+        <div class="programs-grid">
+            <!-- Secondary Section -->
+            <div id="secondary" class="program-card slide-up">
+                <div class="program-header">
+                    <h3>Secondary Education</h3>
+                    <span class="badge">Grades VI - X</span>
+                </div>
+                <div class="program-body">
+                    <p>Focuses on establishing strong fundamentals in core subjects. Prepare students for the secondary school leaving certificate examinations (SSLC).</p>
+                    
+                    <h4>Core Languages</h4>
+                    <ul>
+                        <li>Language I: English (Communicative & Literature)</li>
+                        <li>Language II: Tamil / French</li>
+                    </ul>
+                    
+                    <h4>Core Subjects</h4>
+                    <ul>
+                        <li>Mathematics (Algebra, Geometry, Arithmetic)</li>
+                        <li>Science (Physics, Chemistry, Biology with Lab Practical sessions)</li>
+                        <li>Social Science (History, Civics, Geography, Economics)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Higher Secondary Section -->
+            <div id="higher-secondary" class="program-card slide-up delay-2">
+                <div class="program-header">
+                    <h3>Higher Secondary</h3>
+                    <span class="badge">Grades XI - XII</span>
+                </div>
+                <div class="program-body">
+                    <p>Specialized streams preparing young girls for college and professional careers. Heavy emphasis on practical, hands-on lab sessions.</p>
+                    
+                    <h4>Language Options</h4>
+                    <ul>
+                        <li>Part I: Tamil / French</li>
+                        <li>Part II: English</li>
+                    </ul>
+                    
+                    <h4>Major Stream Selections</h4>
+                    <p style="font-size: 0.9rem; font-style: italic; color: var(--color-gray); margin-bottom: 1rem;">Students must select one of the core academic streams listed below.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Streams Detailed Cards -->
+        <div class="streams-grid">
+            <!-- Stream 1 -->
+            <div class="stream-card slide-up delay-1">
+                <div class="stream-icon"><i class="fa-solid fa-flask"></i></div>
+                <h4>Science (Group A)</h4>
+                <p class="stream-subjects">Physics, Chemistry, Biology, Mathematics</p>
+            </div>
+            
+            <!-- Stream 2 -->
+            <div class="stream-card slide-up delay-2">
+                <div class="stream-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h4>Science (Group B)</h4>
+                <p class="stream-subjects">Physics, Chemistry, Computer Science, Mathematics</p>
+            </div>
+            
+            <!-- Stream 3 -->
+            <div class="stream-card slide-up delay-3">
+                <div class="stream-icon"><i class="fa-solid fa-calculator"></i></div>
+                <h4>Commerce Group</h4>
+                <p class="stream-subjects">Commerce, Accountancy, Economics, Computer Applications / Business Mathematics</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Beyond Academics (Co-curriculars) -->
+<section id="co-curricular" class="section">
+    <div class="container">
+        <div class="section-header slide-up">
+            <h2>Beyond the Classroom</h2>
+            <p>Cultivating leadership, creativity, and fitness through vibrant co-curricular clubs</p>
+        </div>
+        
+        <div class="activities-grid">
+            <!-- Activity 1 -->
+            <div class="activity-card slide-up delay-1">
+                <div class="activity-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=600" alt="Students playing sports on field" class="activity-img">
+                </div>
+                <div class="activity-info">
+                    <h4>Sports & Athletics</h4>
+                    <p>Our students participate and secure medals in State and Zonal Level Athletics, Basketball, and Volleyball tournaments. Physical training is a mandatory part of our weekly calendar.</p>
+                </div>
+            </div>
+            
+            <!-- Activity 2 -->
+            <div class="activity-card slide-up delay-2">
+                <div class="activity-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=600" alt="Student painting an artwork" class="activity-img">
+                </div>
+                <div class="activity-info">
+                    <h4>Cultural & Fine Arts</h4>
+                    <p>From classical Bharatanatyam to modern dance, theater, debating, and vocal music, the school cultural society provides a stage for creative expression and public performance.</p>
+                </div>
+            </div>
+            
+            <!-- Activity 3 -->
+            <div class="activity-card slide-up delay-3">
+                <div class="activity-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=600" alt="Science laboratory equipment" class="activity-img">
+                </div>
+                <div class="activity-info">
+                    <h4>Clubs & Societies</h4>
+                    <p>Active student participation in the Interact Club (community service), Eco Club (sustainability), Literary & Debate Club, and National Cadet Corps (NCC) to build character.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Academic Board Toppers Board -->
+<section class="section section-cream">
+    <div class="container">
+        <div class="section-header slide-up">
+            <h2>Academic Roll of Honor</h2>
+            <p>Celebrating the students who brought laurels to the institution in the recent Board Examinations</p>
+        </div>
+        
+        <div class="toppers-table-wrapper slide-up">
+            <table class="toppers-table">
+                <thead>
+                    <tr>
+                        <th>Class / Exam</th>
+                        <th>Student Name</th>
+                        <th>Marks / Percent</th>
+                        <th>State/District Rank</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Class XII Board Exam</td>
+                        <td class="topper-name">Ananya R. S. (Science Stream)</td>
+                        <td>594 / 600</td>
+                        <td><span class="topper-badge">Chennai District 1st</span></td>
+                    </tr>
+                    <tr>
+                        <td>Class XII Board Exam</td>
+                        <td class="topper-name">Priyanka Sundar (Commerce Stream)</td>
+                        <td>589 / 600</td>
+                        <td><span class="topper-badge">Chennai District 3rd</span></td>
+                    </tr>
+                    <tr>
+                        <td>Class X Board Exam</td>
+                        <td class="topper-name">Keerthana Jayakumar</td>
+                        <td>495 / 500</td>
+                        <td><span class="topper-badge">School Topper</span></td>
+                    </tr>
+                    <tr>
+                        <td>Class X Board Exam</td>
+                        <td class="topper-name">Aysha Siddiqua</td>
+                        <td>491 / 500</td>
+                        <td><span class="topper-badge">School 2nd Mark</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+{% endblock %}

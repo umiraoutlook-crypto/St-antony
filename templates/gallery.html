@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+
+{% block title %}Media Gallery - St. Antony's Girls Higher Secondary School{% endblock %}
+
+{% block content %}
+<!-- Page Banner -->
+<section class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1200');">
+    <div class="page-banner-overlay"></div>
+    <div class="container">
+        <h1>Campus Life Gallery</h1>
+        <div class="breadcrumbs">
+            <a href="{{ url_for('index') }}">Home</a>
+            <span class="separator"></span>
+            <span class="current">Gallery</span>
+        </div>
+    </div>
+</section>
+
+<!-- Filterable Gallery Section -->
+<section class="section">
+    <div class="container">
+        <!-- Category Filters -->
+        <div class="gallery-filters slide-up">
+            <button class="filter-btn active" data-filter="all" id="filterAll">All Photos</button>
+            <button class="filter-btn" data-filter="campus" id="filterCampus">Campus</button>
+            <button class="filter-btn" data-filter="academics" id="filterAcademics">Academics</button>
+            <button class="filter-btn" data-filter="sports" id="filterSports">Sports</button>
+            <button class="filter-btn" data-filter="cultural" id="filterCultural">Cultural</button>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <!-- Photo 1: Campus -->
+            <div class="gallery-item slide-up delay-1" data-category="campus" id="galleryItem1">
+                <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=800" alt="St. Antony's Main Academic Block" class="gallery-item-img">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-tag">Campus</span>
+                    <h4 class="gallery-item-title">Main Academic Block</h4>
+                </div>
+            </div>
+            
+            <!-- Photo 2: Academics -->
+            <div class="gallery-item slide-up delay-2" data-category="academics" id="galleryItem2">
+                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=800" alt="Students in Biology Laboratory" class="gallery-item-img">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-tag">Academics</span>
+                    <h4 class="gallery-item-title">Biology Laboratory Session</h4>
+                </div>
+            </div>
+            
+            <!-- Photo 3: Sports -->
+            <div class="gallery-item slide-up delay-3" data-category="sports" id="galleryItem3">
+                <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=800" alt="Annual Sports Meet Athletics" class="gallery-item-img">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-tag">Sports</span>
+                    <h4 class="gallery-item-title">Annual Athletics Meet</h4>
+                </div>
+            </div>
+            
+            <!-- Photo 4: Cultural -->
+            <div class="gallery-item slide-up delay-1" data-category="cultural" id="galleryItem4">
+                <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=800" alt="Fine Arts & Painting Club Exhibition" class="gallery-item-img">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-tag">Cultural</span>
+                    <h4 class="gallery-item-title">Fine Arts Exhibition</h4>
+                </div>
+            </div>
+            
+            <!-- Photo 5: Campus -->
+            <div class="gallery-item slide-up delay-2" data-category="campus" id="galleryItem5">
+                <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?q=80&w=800" alt="Well-stocked Central Library" class="gallery-item-img">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-tag">Campus</span>
+                    <h4 class="gallery-item-title">School Central Library</h4>
+                </div>
+            </div>
+            
+            <!-- Photo 6: Academics -->
+            <div class="gallery-item slide-up delay-3" data-category="academics" id="galleryItem6">
+                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=800" alt="Smart-classroom setup" class="gallery-item-img">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-tag">Academics</span>
+                    <h4 class="gallery-item-title">Interactive Smart Classroom</h4>
+                </div>
+            </div>
+            
+            <!-- Photo 7: Sports -->
+            <div class="gallery-item slide-up delay-1" data-category="sports" id="galleryItem7">
+                <img src="https://images.unsplash.com/photo-1544698310-74ea9d1c8258?q=80&w=800" alt="Basketball Team Practice Session" class="gallery-item-img">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-tag">Sports</span>
+                    <h4 class="gallery-item-title">Basketball Team Training</h4>
+                </div>
+            </div>
+            
+            <!-- Photo 8: Cultural -->
+            <div class="gallery-item slide-up delay-2" data-category="cultural" id="galleryItem8">
+                <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=800" alt="Annual Cultural Day Dance Drama" class="gallery-item-img">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-tag">Cultural</span>
+                    <h4 class="gallery-item-title">Annual Cultural Celebrations</h4>
+                </div>
+            </div>
+            
+            <!-- Photo 9: Academics -->
+            <div class="gallery-item slide-up delay-3" data-category="academics campus" id="galleryItem9">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800" alt="Computer Science Laboratory" class="gallery-item-img">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-tag">Academics</span>
+                    <h4 class="gallery-item-title">Computer Science Lab</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Custom Lightbox Modal -->
+<div class="lightbox-modal" id="galleryLightbox" aria-hidden="true" role="dialog">
+    <div class="lightbox-content-wrapper">
+        <button class="lightbox-close" aria-label="Close Lightbox Modal">&times;</button>
+        <img src="" alt="" class="lightbox-img">
+        <div class="lightbox-caption"></div>
+    </div>
+</div>
+{% endblock %}

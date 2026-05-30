@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us - St. Antony's Girls Higher Secondary School{% endblock %}
+
+{% block content %}
+<!-- Page Banner -->
+<section class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1200');">
+    <div class="page-banner-overlay"></div>
+    <div class="container">
+        <h1>About Our School</h1>
+        <div class="breadcrumbs">
+            <a href="{{ url_for('index') }}">Home</a>
+            <span class="separator"></span>
+            <span class="current">About Us</span>
+        </div>
+    </div>
+</section>
+
+<!-- Our Legacy Section -->
+<section class="section">
+    <div class="container history-section">
+        <div class="history-image-wrapper slide-up">
+            <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=800" alt="Historical books and learning tools" class="history-img">
+        </div>
+        
+        <div class="history-text slide-up delay-2">
+            <span class="principal-title" style="margin-bottom: 0.5rem; display: block;">Est. 1950</span>
+            <h3>A Legacy of Empowerment</h3>
+            <p>St. Antony's Girls Higher Secondary School was established in Mylapore, Chennai, in the year 1950. Founded by the Sisters of the Congregation with a vision to provide quality education to girls, the school has evolved from a small diocesan learning center into a premier higher secondary institution in Tamil Nadu.</p>
+            <p>Over the last seven decades, we have remained deeply committed to breaking educational barriers for young women. We provide a space where girls are encouraged to raise their voices, ask critical questions, and pursue academic excellence across disciplines.</p>
+            <p>Our school logo crest represents the triple anchor of our educational philosophy: the open book representing academic illumination, the lamp of knowledge representing inner spiritual guidance, and the lily representing purity, humility, and moral strength. Driven by our motto, <em>"Walk in Light and Truth"</em>, we prepare our girls to leave the campus as beacons of hope and integrity for the society.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Vision & Mission Section -->
+<section id="vision-mission" class="section section-cream">
+    <div class="container">
+        <div class="vision-mission-grid">
+            <div class="vision-card slide-up">
+                <div class="vision-icon"><i class="fa-solid fa-eye"></i></div>
+                <h3>Our Vision</h3>
+                <p>To be a premier institution of holistic learning that nurtures self-reliant, ethical, and intellectually vibrant young women who will contribute meaningfully to the betterment of families, communities, and the global society.</p>
+            </div>
+            
+            <div class="mission-card slide-up delay-2">
+                <div class="mission-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <h3>Our Mission</h3>
+                <p>To provide a supportive and challenging learning environment that blends academic rigor with moral integrity. We strive to cultivate leadership skills, spiritual values, scientific thinking, and a sense of social responsibility in every student.</p>
+            </div>
+        </div>
+
+        <!-- Core Values Grid -->
+        <div class="values-list">
+            <div class="value-item slide-up delay-1">
+                <div class="value-icon"><i class="fa-solid fa-heart"></i></div>
+                <h4>Moral Integrity</h4>
+                <p>Instilling truthfulness, honesty, and transparency in actions and choices.</p>
+            </div>
+            <div class="value-item slide-up delay-2">
+                <div class="value-icon"><i class="fa-solid fa-award"></i></div>
+                <h4>Pursuit of Excellence</h4>
+                <p>Striving for the highest standards in academics, arts, sports, and life skills.</p>
+            </div>
+            <div class="value-item slide-up delay-3">
+                <div class="value-icon"><i class="fa-solid fa-hands-holding"></i></div>
+                <h4>Service & Compassion</h4>
+                <p>Nurturing respect for all, empathy for the weak, and a readiness to serve.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Leadership & Faculty Section -->
+<section class="section">
+    <div class="container">
+        <div class="section-header slide-up">
+            <h2>School Leadership & Faculty</h2>
+            <p>Our dedicated team of educators committed to guiding your child's educational journey</p>
+        </div>
+        
+        <div class="faculty-grid">
+            <!-- Faculty 1 -->
+            <div class="faculty-card slide-up delay-1">
+                <div class="faculty-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600" alt="Rev. Sr. Maria Stella" class="faculty-img">
+                </div>
+                <div class="faculty-info">
+                    <h4>Rev. Sr. Maria Stella</h4>
+                    <div class="faculty-role">Principal</div>
+                    <div class="faculty-credentials">M.A., B.Ed., 22 Years Exp.</div>
+                </div>
+            </div>
+            
+            <!-- Faculty 2 -->
+            <div class="faculty-card slide-up delay-2">
+                <div class="faculty-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1580894732444-8febeb28a57b?q=80&w=600" alt="Mrs. Lakshmi Raman" class="faculty-img">
+                </div>
+                <div class="faculty-info">
+                    <h4>Mrs. Lakshmi Raman</h4>
+                    <div class="faculty-role">Vice Principal</div>
+                    <div class="faculty-credentials">M.Sc., M.Ed., 18 Years Exp.</div>
+                </div>
+            </div>
+            
+            <!-- Faculty 3 -->
+            <div class="faculty-card slide-up delay-3">
+                <div class="faculty-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=600" alt="Rev. Sr. Anne Mary" class="faculty-img">
+                </div>
+                <div class="faculty-info">
+                    <h4>Rev. Sr. Anne Mary</h4>
+                    <div class="faculty-role">Headmistress (Primary)</div>
+                    <div class="faculty-credentials">B.Sc., B.Ed., 15 Years Exp.</div>
+                </div>
+            </div>
+            
+            <!-- Faculty 4 -->
+            <div class="faculty-card slide-up delay-4">
+                <div class="faculty-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?q=80&w=600" alt="Mrs. Sophia Elizabeth" class="faculty-img">
+                </div>
+                <div class="faculty-info">
+                    <h4>Mrs. Sophia Elizabeth</h4>
+                    <div class="faculty-role">HOD Science Dept.</div>
+                    <div class="faculty-credentials">M.Sc., M.Phil., 20 Years Exp.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
